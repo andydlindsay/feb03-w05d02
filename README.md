@@ -1,15 +1,15 @@
 # W5D2 - Database Design
 
 ### To Do
-- [ ] Primary Keys/Foreign Keys
-- [ ] Data Types
-- [ ] Relationship Types
-- [ ] Naming Conventions
-- [ ] Normalization
-- [ ] Design Concepts
-- [ ] Entity Relationship Diagrams
-- [ ] ERD #1: Convert 2 Spreadsheets
-- [ ] ERD #2: Student Suggestion
+- [x] Primary Keys/Foreign Keys
+- [x] Data Types
+- [x] Relationship Types
+- [x] Naming Conventions
+- [x] Normalization
+- [x] Design Concepts
+- [x] Entity Relationship Diagrams
+- [x] ERD #1: Convert 2 Spreadsheets
+- [x] ERD #2: Student Suggestion
 
 ### Primary Key
 
