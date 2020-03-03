@@ -68,12 +68,17 @@ We started with these two spreadsheets:
 
 And turned them into a relational db:
 
-![Books and Authors](https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/books+and+authors.png)
+![Books and Authors](https://photos.app.goo.gl/2ENq87UZQs9cQ1DH7)
 
-### ERD #2 Uber/Ride Hailing
-Then we created an ERD for a fictional Uber competitor:
+### ERD #2 Instagram
+Then we created an ERD for an Instagram clone:
 
-![Uber](https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/uber.png)
+![Instagram](https://photos.app.goo.gl/ToYydenUraCsUFBd7)
+
+### ERD #3 WhatsApp
+Finally, we created an ERD to capture data for a WhatsApp clone:
+
+![WhatsApp](https://photos.app.goo.gl/Bkijqk4aTZd9Vc9H6)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
