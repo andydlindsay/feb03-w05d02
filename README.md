@@ -11,75 +11,69 @@
 - [ ] ERD #1: Convert 2 Spreadsheets
 - [ ] ERD #2: Student Suggestion
 
-### Primary Keys/Foreign Keys
-- Primary Keys - uniquely identify a particular record
-- Has to be unique within the table
-- Integer, BigInteger for foreign keys
-- Foreign key lives in the many table
-- ~~strings as primary keys~~
+### Primary Key
+
+- A way of uniquely identifying a particular record within a table 
+- Must be unique (within the table) and can never be null
+- The usual data type is auto-incrementing integer (`INTEGER` or `BIGINT`)
+- A Primary Key stored in another table is known as a `Foreign Key`
+- The Primary Key and Foreign Key **MUST** be the same data type
 
 ### Data Types
-- This used to be a BIG consideration
-- Every field in a table NEEDS a data type
-- Always store phone numbers as varchar
-- 555-555-5555 5555555555 '(555)-'
-- 90210-1000
+
+- Each field in a table **must** have a data type defined for it
+- The data type tells the database how much room to set aside to store the value _and_ allows the database to perform type validation on data before insertion (to protect the data integrity of the table)
+- Choosing the perfect data type is less of a concern nowadays because memory is now comparably cheap.
 
 ### Relationship Types
-- One-to-many
-- One-to-one
-- Many-to-many
+
+- **One-to-One**: One record in the first table is related to one (and only one) record in the second table
+- **One-to-Many**: One record in the first table is related to one or more records in the second table
+- **Many-to-Many**: One or more records in the first table are related to one or more records in the second table
+
+It could be argued that there is really only one relationship type: _One-to-Many_ as One-to-One's are extremely rare and Many-to-Many's are implemented using two _One-to-Many's_.
 
 ### Naming Conventions
-- table names are always plural and lowercase
-- primary keys are always 'id'
-- foreign keys are always table singular + `_id`
-- multi-words are snake_case
+
+- Table and field names are written in `snake_case`
+- Table names are always pluralized
+- The primary key for each table will simply be called `id`
+- A foreign key is made up of the singular of the primary keys table and the suffix `_id` (eg. `user_id` is the foreign key for the `id` field in the `users` table)
 
 ### Normalization
-- This is the process of cleaning up the data in a database
-- Making sure that you are storing the data correctly with no redundancy
-- Storing the same data twice or data that repeats
-- `birth_date` and `age`
-- 'Canada'
-- `countries`
-- pk id
-- varchar country
-- That you can take way too far
+
+- The process of designing (and redesigning) a relational database to reduce duplicated data
+- This will help to improve the structure of the data
+- Beware: taking this process too far can result in extremely complex queries to retrieve related data
 
 ### Design Concepts
-- Making fields required NOT NULL
-- Think about the initial state of the record when it is first created
-- Intelligent default values can be inserted for you
-- `created_at` default NOW()
-- `edited_at`
-- Never delete anything DELETE
-- `active` boolean false DEFAULT VALUE true
-- Consider using a `type` field
 
-### Entity Relationship Diagram
-- ERD
-- Shows all our entities (tables) and how they are related to one another
+- Make fields required based on the records state upon initial creation (remember that additional data can be added to a record after it has been created)
+- Intelligent default values can be set for fields (such as the current timestamp for a `created_on` field)
+- Don't use calculated fields (a field that can be derived from one or more other fields, such as `full_name` is a combination of `first_name` and `last_name`)
+- Pull repeated values out to their own table and make reference to them with a foreign key
+- Try not to delete anything (use a boolean flag instead to mark a record as active or inactive)
+- Consider using a `type` field instead of using two (or more) tables to store very similar data (eg. create an `orders` table with an `order_type` field instead of a `purchase_orders` and a `sales_orders` table)
 
+### Entity Relationship Diagram (ERD)
 
+- A visual depiction of the database tables and how they are related to each other
+- Extremely useful for reasoning about how the database should be structured
+- Can be created using pen and paper, a whiteboard, or using an online application
 
+### ERD #1 Convert 2 Spreadsheets
+We started with these two spreadsheets:
 
+![Two Spreadsheets](https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/bookAndAuthorsTables.png)
 
+And turned them into a relational db:
 
+![Books and Authors](https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/books+and+authors.png)
 
+### ERD #2 Uber/Ride Hailing
+Then we created an ERD for a fictional Uber competitor:
 
-
-
-
-
-
-
-
-
-
-
-
-
+![Uber](https://andydlindsay-portfolio.s3.amazonaws.com/lighthouse/uber.png)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
