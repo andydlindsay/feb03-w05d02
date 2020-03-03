@@ -78,7 +78,7 @@ Then we created an ERD for an Instagram clone:
 ### ERD #3 WhatsApp
 Finally, we created an ERD to capture data for a WhatsApp clone:
 
-![WhatsApp](https://photos.app.goo.gl/Bkijqk4aTZd9Vc9H6)
+![WhatsApp](https://lh3.googleusercontent.com/UDtndUt8cS-6w2LWSayTSfSKIra0OySM2el0Trv1QAitDtKzppspTRcJBIdn62pis0dCfT9LUnrvs-ZTFLggdMLI-ap8cgk1hDErcqDlfXcDqISKXG9ygfXGW9b17asvb9F1i5CQ1QDZtMOZ3FOmx8nTq4R3HAe2Lqm5Rc_VJi55gKQNdzjSY5W5XVEd8wPFCn-eqBAWuzRgNzXRxrX8Bd04zP3p3-6dL1SFw-ZmfRogRlSVbnuDgQHy9icWD7Wbj-Tji6AYs8FxNn5jrwZJdijYWo9DyfmiD8JUpjAhyyjlvkxrpIGUbPEto9YXYQheOa-rIsK350I44BwGfKBHRbq1kwmbN9p8SYjLUAmJNIBuHssxHyh_i73e0GmKAp7Wjpo_T7NwCl82RSZAQiiJPCwliWr0x3sFRYhxVaE-pRmWiriRq9L46jY8ZrK1YLWyQy5YaxzjjyH0rD4ev4rcCn9Vs2P5GqBhL0VP5wCT_4vLtpHyDOy35dw9XruepdQd270uvdtoUrmgqv0eyk9tS6XUdi9F3P0oDDmS0AKb73oqZwJmNCYBDJCQlJTb0qPNtTLtzmNgDVKxMdjNMpeFp7agQDuVeMl6jiFr2DCY_XLzXc_4xkr8CaQBpOiYmaMMk9X5XYl4VMSDm-bj1W6dY72MM_LUQDopE3_YvHKAi_xsYrCJTwGW=w881-h425-no)
 
 ### Useful Links
 * [Database Normalization](https://en.wikipedia.org/wiki/Database_normalization)
